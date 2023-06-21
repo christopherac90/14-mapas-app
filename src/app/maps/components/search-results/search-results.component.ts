@@ -39,6 +39,6 @@ export class SearchResultsComponent {
     const start = this.placeService.useLocation;
     const end = place.center as [number, number];
     
-    this.mapServices.getRouteBetweenPoints(start, end);
+    //this.mapServices.getRouteBetweenPoints(start, end);
   }
 }

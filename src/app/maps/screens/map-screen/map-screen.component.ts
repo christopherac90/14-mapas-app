@@ -11,6 +11,8 @@ import { PlacesService } from '../../services/places.service';
 export class MapScreenComponent {
 
 
+
+
   constructor( private placesService: PlacesService ) { }
 
 
@@ -18,6 +20,6 @@ export class MapScreenComponent {
     return this.placesService.isUserLocationReady;
   }
 
-
+  
 
 }

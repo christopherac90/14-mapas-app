@@ -29,7 +29,6 @@ export class PlacesService {
 
     return new Promise( (resolve, reject ) => {
       
-
       navigator.geolocation.getCurrentPosition(
         ({ coords }) => {
           
@@ -42,10 +41,7 @@ export class PlacesService {
           reject();
         }
       );
-
-
     });
-
   }
 
   getPlacesByQuery(query: string = ''){
@@ -67,7 +63,7 @@ export class PlacesService {
       resp=>{
         this.isLoadingPlaces= false;
         this.places= resp.features;
-        this.mapService.createMarkersFromPlaces(this.places,this.useLocation!);
+       // this.mapService.createMarkersFromPlaces(this.places,this.useLocation!);
       }
     );
 

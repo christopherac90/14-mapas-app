@@ -7,6 +7,9 @@ import { BtnMyLocationComponent } from './components/btn-my-location/btn-my-loca
 import { AngularLogoComponent } from './components/angular-logo/angular-logo.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { SearchResultsComponent } from './components/search-results/search-results.component';
+import { ContextMenuComponent } from './components/context-menu/context-menu.component';
+import { NuevoVueloComponent } from './components/nuevo-vuelo/nuevo-vuelo.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -18,14 +21,17 @@ import { SearchResultsComponent } from './components/search-results/search-resul
     BtnMyLocationComponent,
     AngularLogoComponent,
     SearchBarComponent,
-    SearchResultsComponent
+    SearchResultsComponent,
+    ContextMenuComponent,
+    NuevoVueloComponent
   ],
   imports: [
     CommonModule,
+    ReactiveFormsModule
     
   ],
   exports:[
-    MapScreenComponent
+    MapScreenComponent,
 
 
   ]
